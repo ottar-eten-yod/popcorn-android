@@ -249,7 +249,7 @@ public class TorrentService extends Service implements TorrentServerListener {
         }
         String WAKE_LOCK = "PCT:TorrentService_WakeLock";
         mWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, WAKE_LOCK);
-        mWakeLock.acquire();
+        mWakeLock.acquire(10*60*1000L /*10 minutes*/);
 
         mTorrentStreamServer.setTorrentOptions(getTorrentOptions());
 
