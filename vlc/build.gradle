@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    ndkVersion "21.0.6113669"
+    ndkVersion "25.2.9519653"
     compileSdkVersion rootProject.ext.compileSdk
 
     defaultConfig {
